@@ -2,205 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="238c846c-90cf-44dc-a892-a00fd77b5e21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/a-z.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/add.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/admin_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/admin_pass_window.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhta_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/cicon1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/cicon2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/cicon9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/cicon_loadindex_ani.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/ciconidx.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/clear.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/delete.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/edit.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/embim9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/er_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/er_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/er_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/er_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/er_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/load.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/login_window.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/main.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/obhod1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/obhod2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/obhod3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/obhod4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pok9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/running_database_confirm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/save.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_debug1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_debug2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_debug3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_debug4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/serial.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/server_managment_window.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/server_managment_window_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/sync_window_step1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/sync_window_step2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/sync_window_step3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/toolbar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/undo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/z-a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/zig.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/buhta-doc-github-io.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaform.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaformreportpok.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtasupport.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtauniform.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaversion_content.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaversion_ftsearch.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaversion_kwindex.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/buhtaversion_popup_html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/calcsummdiff.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/calcus.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/dogspeccorrect.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/dohodrashodbook.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/functions_examples.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/genprov.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/helpman_navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/helpman_settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/helpman_topicinit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/highlight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/import_online.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090120.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090212.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090318.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090415.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090515.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090615.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090720.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090810.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20090924.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20091016.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20091110.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20091222.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100119.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100219.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100322.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100412.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100514.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100615.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100715.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100816.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20100924.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20101022.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20101116.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20101217.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110119.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110217.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110322.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110415.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110524.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110624.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110722.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110825.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20110929.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20111021.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20111125.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20111223.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120124.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120224.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120327.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120416.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120521.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120613.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120710.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120803.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20120910.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20121015.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20121112.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20121217.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130121.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130219.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130320.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130417.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130527.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130620.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130722.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130827.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20130920.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20131021.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20131118.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20131218.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140117.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140224.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140324.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140425.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140523.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140627.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140728.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140826.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20140919.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20141027.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20141125.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20141229.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150126.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150225.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150327.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150424.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150522.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150622.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150717.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150827.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20150929.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20151023.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20151123.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20151228.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160129.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160226.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160328.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160420.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160523.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160628.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160720.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160830.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20160926.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/mainpage20161026.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pfr.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/pricescripts.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_debugger.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/script_error.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/scripts_examples.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/svodniyreport.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/title.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/versionchange.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/wms_obhod.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/zarplata.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/zoom_index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/zoom_pageinfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/zoom_search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -218,12 +21,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LICENSE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="32">
+                <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -250,6 +66,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/index.md" />
       </list>
     </option>
   </component>
@@ -264,6 +81,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -319,6 +139,84 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="GO_FMT" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -330,7 +228,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1484667254742</updated>
-      <workItem from="1484667255989" duration="292000" />
+      <workItem from="1484667255989" duration="570000" />
     </task>
     <task id="LOCAL-00001" summary="--">
       <created>1484667323141</created>
@@ -346,11 +244,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484667437830</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1484667558914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1484667558914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292000" />
+    <option name="totallyTimeSpent" value="570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -385,7 +290,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="--" />
-    <option name="LAST_COMMIT_MESSAGE" value="--" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -405,9 +311,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="32">
+            <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
