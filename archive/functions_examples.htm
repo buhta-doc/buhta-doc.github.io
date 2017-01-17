@@ -1,0 +1,102 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Примеры функций</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "functions_examples.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Примеры функций</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="scripts_examples.htm">Previous</a>&nbsp;
+     <a href="wms_obhod.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;">Содержание:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;"><a href="functions_examples.htm#_fifo" class="topiclink">Функции сортировки FIFO</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_fifo"></a><span style="font-weight: bold; color: #00007f;">Функции сортировки FIFO</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"> &nbsp;При настройке генерации проводок к документу - для алгоритма списания по FIFO - указывается сортировка для аналитики &quot;Документ&quot;, &quot;Договор&quot;, &quot;Партия ТМЦ&quot;. Это позволяет скорректировать последовательность списания аналитических позиций сальдо с учетом особенностей объектов аналитики.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"> &nbsp;Например, если в аналитике используется договора, то можно применить сортировку &quot;+Договор.Дата,+Договор.Номер&quot;. В этом случае перед стандартной сортировкой &quot;[Тип субконто],[Субконто]&quot; добавится &quot;Договор.Дата, Договор.Номер&quot;.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"> &nbsp;Стандартного набора сортировок обычно достаточно для организации нужного варианта FIFO. Однако бывают случаи, когда приоритет получают объекты по &quot;совокупности параметров&quot;. В таком случае в сортировку можно добавить функцию, которая будет формировать значение &quot;для сортировки&quot;, позволяющее более гибко учесть заданные условия.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"> &nbsp;Например, функция приведенная ниже, дает более высокий приоритет сальдо по подразделению, совпадающему с поставщиком генерируемого документа:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">CREATE Function [dbo].[_Приоритет сальдо по Док.Поставщик] </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;(@SubType Varchar(3), @SubId INT, @DocId INT, @SpecID INT)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">Returns Varchar(30)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">AS</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">BEGIN</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;Declare @RetStr Varchar(30)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;Declare @DocPost INT</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;if @SubType='Под'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;begin</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Set @DocPost=Isnull((Select Поставщик From Документ with(Nolock) Where Ключ = @DocID),0)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Set @RetStr=Case When @SubId=@DocPost Then '00' Else '01' End</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;end</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;else  </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Set @RetStr='02'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;RETURN @RetStr</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">END</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">А следующая функция обеспечивает приоритет договорам, в которых получатель совпадает с поставщиком генерируемого документа. При этом дата и номер договора также участвуют в сортировке. Основная сложность для разработчика заключается в том, что &quot;сортируемое&quot; значение - строка - может включать эквивалент нескольких полей - в данном случае 3-х. Поэтому нужно обеспечить фиксированное расположение эквивалентов полей в возвращаемой строке. В данном случае строка формируется следующим образом:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">2 знака - приоритет по значению поля получатель</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">8 знаков - дата в формате YYYYMMDD</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">номер не форматируется, сортируется как строка.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">Create Function dbo.[_СортДог_Получ=ДокПост_Дата_Номер] </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;(@SubType Varchar(3), @SubId INT, @DocId INT, @SpecID INT)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">Returns Varchar(30)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">AS</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">BEGIN</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;Declare @RetStr Varchar(30)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;Declare @DocPost INT</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;if @SubType='Дог'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;begin</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Set @DocPost=Isnull((Select Поставщик From Документ with(Nolock) Where Ключ = @DocID),0)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Select @RetStr=Case When Договор.Получатель=@DocPost Then '00' Else '01' End +</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Convert(Varchar(8),Договор.Дата,112) + Договор.Номер</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;From Договор with(Nolock) where Ключ=@SubId</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;end</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;else  </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Set @RetStr='02'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';"> &nbsp;RETURN @RetStr</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 46px;"><span style="font-family: 'Courier New';">END </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

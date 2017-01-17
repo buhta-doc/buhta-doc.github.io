@@ -1,0 +1,102 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Скрипты для работы с прайс-листом</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "pricescripts.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Скрипты для работы с прайс-листом</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="svodniyreport.htm">Previous</a>&nbsp;
+     <a href="zarplata.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-align: center; text-indent: 0px; margin: 0px 40px 0px 18px;">Скрипты для работы с прайсом:</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Прайс лист </p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;OnBeforeLoadData(PriceNumName)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;OnAfterLoadData(PriceNumName)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;OnSelectTMCKol(TMCID, KolOld, Kol)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;OnCreateDogovor(DogID, DogVid)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;GetBizOperList(ByRef List)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;RunBizOper(BizOper)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;BeforeRunBizOper</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp;AfterRunBizOper</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> <span style="font-weight: bold;"> &nbsp; RefreshButtonClick</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;RefreshOneRow(TMCID)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;RefreshScreen</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;FormClose(ByRef Allow)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Карточка редактирования договора</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp; &nbsp; &nbsp;OnCreateDoc(ByRef DocVid, ByRef DocDate, ByRef PartialSpec, ByRef CreateAllow, ByRef CreateAllowMsg)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp;OnBeforeInsertFromPriceButtonClick(ByRef Allow)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp;OnAfterInsertFromPriceButtonClick</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp;OnBeforeCorrectFromPriceButtonClick(ByRef Allow)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp;OnAfterCorrectFromPriceButtonClick</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Форма выбора цены (валюты, курса)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;FormShow</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;SelectButtonClick(ByRef Allow)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;"> &nbsp; &nbsp;CloseButtonClick(ByRef Allow)</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Форма с выбранным товаром</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">FormShow</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">FormClose</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">CreateDog</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Форма выбора вида договора и спецификации</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">FormShow</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">SelectButtonClick</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="font-weight: bold;">CloseButtonClick</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Некоторые события имеют возвращаемый параметр Allow типа Boolean. В случае его значения = False дальнейшая обработка события не производится, действие вызвавшее это событие не осуществляется, в противном случае работа продолжается в штатном режиме.</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">Кроме вышеописанных событий, &nbsp;в скрипте доступны события для всех компонентов этих форм типа TbmDBEdit:</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OnEnter</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OnExit</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OnChange</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OnValidate(ByRef IsValid, ByRef NoValidMessage)</p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;">На форме выбора цены появился флаг «Скрыть цены кроме выбранной», с помощью которого можно скрывать все колонки цен кроме выбранной. Значением этого флага можно управлять через скрипт.  </p>
+<p style="text-indent: 0px; margin: 0px 40px 0px 18px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

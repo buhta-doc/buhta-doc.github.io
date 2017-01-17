@@ -1,0 +1,445 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Примеры скриптов</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "scripts_examples.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Примеры скриптов</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="script_debugger.htm">Previous</a>&nbsp;
+     <a href="functions_examples.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;">Содержание:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Работа с запросами</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Заполнение и отображение полей</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_-" class="topiclink">Работа с прайс-листом</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Работа с субконто</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Работа с договорами и документами</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_-" class="topiclink">Выполнение бизнес-операций</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Внешний вид (подсветка полей, изменение фона и т.п.)</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;"><a href="scripts_examples.htm#_" class="topiclink">Работа с Сальдо/Оборот</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Работа с запросами</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> передать даты периода в запрос.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">Задать начало и конец периода (в пользовательской форме через <span style="font-family: 'Courier New';">GlobalVar</span>).</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">2.</td><td style="border:none;padding:0">Получить значения в VBScript и ввести в запрос.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">public VBStr1, VBStr2</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub ViewOnSetVBStr ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;VBStr1 = GetGlobalVar (&quot;BegDate&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;VBStr2 = GetGlobalVar (&quot;EndDate&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В запросе на закладке <span style="font-weight: bold;">WHERE </span>необходимо ввести: <span style="font-family: 'Courier New';">Документ.Дата between ^VBStr1^ and ^VBStr2^</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> организовать с помощью VBScript сортировку итоговых данных.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">В форме выбирается порядок сортировки.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">2.</td><td style="border:none;padding:0">Это значение с помощью <span style="font-family: 'Courier New';">GlobalVar</span> передается в VBScript.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">3.</td><td style="border:none;padding:0">В VBScript значение получается и обрабатывается.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">'выборочное цитирование кода</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Itogi = GetGlobalVar(&quot;SOS_Itogi&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Select Case Itogi</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Общие итоги&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Подразделение&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;Подразделение&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Вид ОС&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;Вид&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Отв. лицо&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;МОЛ&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Группа ОС&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;[Группа ОС]&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Подразделение, вид ОС&quot; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;Подразделение, вид&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Подразделение, отв.лицо&quot; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;Подразделение, МОЛ&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Case &quot;Подразделение, группа ОС&quot; &nbsp; &nbsp; &nbsp; &nbsp;OrderStr &nbsp;= &quot;Подразделение, [группа ОС]&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Select</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В результате работы скрипта имеется список полей, по которым надо проводить сортировку.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В запросе на закладке <span style="font-weight: bold;">SQLAfter</span> необходимо ввести: <span style="font-family: 'Courier New';">order by ^OrderStr^</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Заполнение и отображение полей</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> в реквизитах договора в поле <span style="font-weight: bold;">Способ оплаты</span> отображать список валют, в которых может быть произведен платеж.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript карточки договора.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormOnShow &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'при открытии формы редактирования</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> SposobOplatyEdit.ComboType = &quot;SQL в ComboItems&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> SposobOplatyEdit.ClearComboItems</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> SposobOplatyEdit.Comboitems.Add(&quot;SELECT DISTINCT Название FROM Валюта&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> SposobOplatyEdit.LoadComboItems</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> заполнять автоматически поле [Сумма] в спецификации при заполнении/редактировании полей с ценой и количеством </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение: </span>написать текст кода в VBScript карточки спецификации.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub KolEditOnChange 'Количество'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SumEdit.Value = KolEdit.Value * CenaEdit.Value '</span>Сумма = Кол-во * Цена</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub CenaEditOnChange 'Цена'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SumEdit.Value = KolEdit.Value * CenaEdit.Value</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> заполнять автоматически поле [Сумма руб.] в спецификации при заполнении поля [Сумма] (в USD); заполнение производить по курсу на текущую дату.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript карточки спецификации.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">&nbsp;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub SumEditOnChange 'Сумма'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SummaRubEdit.Value = GetValueFromSQL(&quot;SELECT dbo.[Конвертация валюты] (&quot; + intToStr(Val1Edit.Value) + &quot;, &quot; + intToStr(rubcode)+ &quot;, &quot; + FloatToStr(SumEdit.Value) + &quot; , &quot; + DateAsSQL(DateEdit.Value) + &quot;, 'ЦБ')&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub Val1EditOnChange 'Валюта1'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SummaRubEdit.Value = GetValueFromSQL(&quot;SELECT dbo.[Конвертация валюты] (&quot; + intToStr(Val1Edit.Value) + &quot;, &quot; + intToStr(rubcode)+ &quot;, &quot; + FloatToStr(SumEdit.Value) + &quot; , &quot; + DateAsSQL(DateEdit.Value) + &quot;, 'ЦБ')&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub Val2EditOnChange 'Валюта2'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SummaRubEdit.Value = GetValueFromSQL(&quot;SELECT dbo.[Конвертация валюты] (&quot; + intToStr(Val1Edit.Value) + &quot;, &quot; + intToStr(rubcode)+ &quot;, &quot; + FloatToStr(SumEdit.Value) + &quot; , &quot; + DateAsSQL(DateEdit.Value) + &quot;, 'ЦБ')&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">========</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> включать/отключать видимость и доступность полей.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">PostEdit.Enabled=False 'поле недоступно</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">PostEdit.Visible=False 'поле невидимо</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">PostEdit.Enabled=True 'поле доступно</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">PostEdit.Visible=True 'поле видимо</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_-"></a><span style="font-weight: bold; color: #000080;">Работа с прайс-листом</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> при открытии окна <span style="font-weight: bold;">Прайс-лист</span> автоматически открыть требуемый прайс-лист.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> открыть редактор скрипта для прайс-листа и на свойство <span style="font-family: 'Courier New';">PriceFormShow </span>добавить приведенный ниже код.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub PriceFormShow ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="width:29px">&nbsp;</span><span style="font-family: 'Courier New';">PriceListEdit.Value=&quot;[3]основной&quot; 'Указать значение поля [Номер и Название] прайс-листа.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> вставить цену из прайс-листа в спецификацию.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение: </span>&lt;...где помещать текст кода?...&gt;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub Subconto1EditOnChange</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;CenaEdit.Value=GetValueFromSQL(&quot;SELECT TOP 1 Цена FROM [Базовая цена ТМЦ] WHERE ТМЦ=&quot;+CSTR(Subconto1Edit.Value)+&quot;AND [Базовая цена]='Основная' ORDER BY Дата DESC&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Работа с субконто</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> заполнить поле субконто 1 в спецификации значением из поля <span style="font-weight: bold;">Получатель</span> из шапки Договора или Документа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript карточки спецификации договора/документа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormAfterNewData 'Автоподстановка плательщика в субконто спецификации'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Subconto1Edit.SubcontoType=Form.OwnerForm(&quot;PolEdit&quot;).SubcontoType</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;if IsEmptyRef(Form.OwnerForm(&quot;PolEdit&quot;).Value)=false then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Subconto1Edit.Value=Form.OwnerForm(&quot;PolEdit&quot;).Value</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;else</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;bmInformation(&quot;Не указан плательщик!&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Subconto1Edit.Value=249</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> узнать тип субконто в карточке редактирования или назначить тип субконто.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода </span>(обращение к типу субконто)<span style="font-weight: bold;">:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Subconto1Edit.SubcontoType='Орг'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Работа с документами и договорами</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> запретить копирование записей (например, документов).</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript списка записей (например, списка документа).</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormOnAfterCopy(TableName, SourceID, DestID) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;MsgBox &quot;OOPS!&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">'-------------------------------------------------------------------------------</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormOnBeforeCopy(ByRef TableName, SourceID, IsContinue) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;MsgBox &quot;OOPS!&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;IsContinue=False 'Если IsContinue=False - копирование запрещено.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> при сохранении договора проводится создание документа, по спецификациям этого договора.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Как сделать так, чтобы документы не пересоздавались, если при редактировании в договоре изменены поля, от которых документы не меняются.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">' процедура инициирует служебную переменную = кол-ву измененных догспец</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormOnShow ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SpecChanged=0</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">' Значение служебной переменной заполняется кол-вом измененных догспец.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormBeforeSaveData ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;SpecChanged=GetValueFromSQL(&quot;Select Count(*) From #Догспец Where Status&gt;0&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">' Процедура, проверяющая изменения важных полей формы редактирования договора и измененния в спецификациях</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormAfterSaveData ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;If SpecChanged=0 and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;PostEdit.Value=PostEdit.InitValue and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;PolEdit.Value=PolEdit.InitValue and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;((Data_1.Value=&quot;0:00:00&quot; and Data_1.InitValue=&quot;01.01.1900&quot;) or Data_1.Value=Data_1.InitValue) and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;........................  </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;((Data_14.Value=&quot;0:00:00&quot; and Data_14.InitValue=&quot;01.01.1900&quot;) or Data_14.Value=Data_14.InitValue) and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Priznak_1.Value=Priznak_1.InitValue and _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;........................  </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Priznak_14.Value=Priznak_14.InitValue Then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;Exit Sub &nbsp;//Если ничего существенного не было изменено - выходим из процедуры и не создаем документы заново</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;[Далее процедура создания документов]</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> вывод информации по долгам клиента во время редактирования договора (документа):</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript карточки договора/документа. Запуск процедуры надо включить в события FormAfterLoadData, PolEditOnChange</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub ShowClientInfo</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;DepositRub=GetValueFromSQL(&quot;SELECT ISNULL((SELECT Значение FROM Остаток WHERE [Юр.лицо]=1 AND Вид=3 AND Субконто=&quot;+PolEdit.ValueAsSQL+&quot;),0)&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;if DepositRub&lt;0 then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;PolNote.Caption=&quot;Депозит &quot;+CStr(-DepositRub)+&quot; руб.&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;PolNote.Font.Color=clBlue</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;else</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;if DepositRub&gt;0 then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;PolNote.Caption=&quot;Долг &quot;+CStr(DepositRub)+&quot; руб.&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;PolNote.Font.Color=clRed</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> контроль пустых полей в шапке договора.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript карточки договора.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub PostEditOnValidate(ByRef IsValid, ByRef NoValidMessage) 'Поставщик'</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;if VarType(PostEdit.Value)=0 or (VarType(PostEdit.Value)=3 and PostEdit.Value=0) then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;NoValidMessage=&quot;Поставщик не может быть пустым&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp;MsgBox(NoValidMessage)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_-"></a><span style="font-weight: bold; color: #000080;">Выполнение бизнес-операций</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> создать/отредактировать бизнес-операции для вида документа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">Открыть карточку редактирования документа.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">2.</td><td style="border:none;padding:0">Открыть редактор скрипта и добавить туда приведенный ниже код (приведенный код позволяет изменить ставку НДС в отмеченных документах).</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormGetBizOperList(ByRef List) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;List = &quot;НДС 18; Пересчет для НДС=18%&quot; + Chr(13) + _</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;НДС 10; Пересчет для НДС=10%&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormRunBizOper(BizOper) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Select Case BizOper</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; Case &quot;НДС 18&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecuteSQL (&quot;UPDATE Докспец SET [НДС]=18 WHERE Документ=&quot; + IntegerAsSQL(Form.RecordID))</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecuteSQL (&quot;EXEC [Пересчет спецификаций документа от суммы] &quot; + IntegerAsSQL(Form.RecordID)+&quot;&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; Case &quot;НДС 10&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecuteSQL (&quot;UPDATE Докспец SET [НДС]=10 WHERE Документ=&quot; + IntegerAsSQL(Form.RecordID))</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExecuteSQL (&quot;EXEC [Пересчет спецификаций документа от суммы] &quot; + IntegerAsSQL(Form.RecordID)+&quot;&quot;)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; Case Else MsgBox &quot;Неизвестная бизнес-операция: &quot; + BizOper</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;End Select</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача:</span> создать документы на основании договора посредством бизнес-операций.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">Открыть карточку редактирования документа.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">2. &nbsp; &nbsp; &nbsp; &nbsp;Открыть редактор скрипта и добавить туда приведенный ниже код (позволяет запустить SQL-процедуру по созданию документов на списание комплектующих).</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormGetBizOperList(ByRef List) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;List = &quot;Создание док 21; Списание комплектующих&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub FormRunBizOper(BizOper) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Select Case BizOper</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; Case &quot;Создание док 21&quot; EXECUTESQL (&quot;EXEC [_Создание документа 21] &quot; + IntegerAsSQL(Form.RecordID))</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; Case Else MsgBox &quot;Неизвестная Бизнес операция: &quot; + BizOper</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;End Select</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Внешний вид (подсветка полей, изменение фона и т.п.)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Задача: </span>подсветить строку в списке договоров.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Решение:</span> написать текст кода в VBScript запроса по списку договоров.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода</span> для смены окраски строки с крупным заказом:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub ViewOnSetColor(Column, ByRef Color) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;if View(&quot;Сумма&quot;)&gt;=20000 then Color = 9104422 end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Текст кода </span>(вторая часть) для смены цвета в поле <span style="font-weight: bold;">Получатель</span> для клиентов определенного вида:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">Sub ViewOnSetFont(Column, ByRef Font) ''</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> if View(&quot;Вид клиента&quot;)=2 and Column = &quot;Получатель&quot; then</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; font.color = 255</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp; font.style = 1 'Значения, которые может принимать font.style, приведены ниже.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> end if</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';">End Sub</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Значения, которые может принимать <span style="font-family: 'Courier New';">font.style</span>:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">0 - обычный шрифт (по умолчанию);</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">1 - жирный;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">2 - курсив;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">3 - жирный курсив;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">4 - подчеркнутый;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">5 - подчеркнутый жирный;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">6 - подчеркнутый курсив;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">7 - подчеркнутый жирный курсив;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">8 - зачеркнутый;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">9 - зачеркнутый жирный.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id="_"></a><span style="font-weight: bold; color: #000080;">Работа с Сальдо/Оборот</span> </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">======</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Программное управление выполнением запроса по <span style="font-weight: bold;">Сальдо/Оборот</span>.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Предположим, что есть пользовательская форма с полями ввода  <span style="font-weight: bold;">OrgEdit, DateEdit, ValEdit</span>, таблицей(TbuhtaGrid) с именем <span style="font-weight: bold;">Grid </span>и запросом &nbsp;с &nbsp;именем <span style="font-weight: bold;">View</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Grid.ClearNodes; &nbsp; </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Close; &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Период для <span style="font-weight: bold;">Сальдо/Оборот</span> задается при помощи параметров <span style="font-weight: bold;">'BegDate'</span> и <span style="font-weight: bold;">'EndDate'</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['BegDate'] := DateEdit.Value;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['EndDate'] := DateEdit.Value;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Если параметры <span style="font-weight: bold;">'BegDate' </span>и <span style="font-weight: bold;">'EndDate'</span> не заданы, произойдет запрос периода через стандартный диалог. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Параметры должны быть именно не заданы(опущены), нельзя использовать <span style="font-family: 'Courier New';">View.Param.Values['BegDate'] := 0;</span> и <span style="font-family: 'Courier New';">View.Param.Values['EndDate'] := 0; </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоВалюта'] := 'Одна';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоВалюта значение'] := ValEdit.Value;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСчет'] := 'Список';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСчет список'] := '62,62/1';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСчет Субсчета'] := True;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 1 тип'] := 'Один';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 1 значение тип'] := 'Орг';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 1'] := 'Один';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 1 значение'] := OrgEdit.Value;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;Grid.LoadData;  </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"> &nbsp;Результат выполнения запроса &nbsp;зависит от состава &nbsp;его полей. Так, если в запросе задействовано поле <span style="font-weight: bold;">[Субконто 2],</span> то возможно лишь выбрать конкретное значение или список значений, </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 2 тип'] := 'Все';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 2 список тип'] := 'Дог';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 2'] := 'Все';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: 'Courier New';"> &nbsp;View.Param.Values['СальдоСубконто 2 список'] := '5343, 5244';</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">но &quot;свернуть&quot; суммы по всем субконто, указав <span style="font-family: 'Courier New';">View.Param.Values['СальдоСубконто 2'] := 'Нет' </span>- нельзя.</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

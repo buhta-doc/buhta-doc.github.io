@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Режим ''Расчет суммовых разниц''</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "calcsummdiff.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Режим ''Расчет суммовых разниц''</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="calcus.htm">Previous</a>&nbsp;
+     <a href="pfr.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">Добавлен новый режим расчета суммовых разниц по договорам РАСХОДА. Вызывается из главного меню, раздел &quot;Расчеты&quot;.</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">Последовательность работы с режимом:</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">1. Поиск договоров для начисления суммовых разниц.На экране необходимо указать:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ДАТА &nbsp; - дата, на которую производится расчет суммовых разниц</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">САЛЬДО - настроенное сальдо, по которому собирается информация для начисления суммовых разниц. В настройке сальдо можно указать счета, валюту, субконто и другие параметры, ограничивающие список договоров и документов, по которым идет поиск.</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">признак ПОКАЗЫВАТЬ ТОЛЬКО НЕЗАКРЫТЫЕ ДОГОВОРА - если признак проставлен, то в список договоров для начисления суммовых разниц НЕ ПОПАДУТ договора, сальдо по которым на указанную ДАТУ нулевые.</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">признак СВОРАЧИВАТЬ СУММОВУЮ РАЗНИЦУ - влияет на алгоритм поиска уже начисленной суммовой разницы, если он проставлен, то поиск идет по одному (свернутому) субсчету, который указывается с экрана, если признак не проставлен, то поиск начисленной суммовой разницы идет по двум субсчетам (с положительной и отрицательной суммовыми разницами)</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ПРОЧИЙ СУБСЧЕТ ДЛЯ ПОЛОЖИТЕЛЬНОЙ СУММОВОЙ РАЗНИЦЫ</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ПРОЧИЙ СУБСЧЕТ ДЛЯ ОТРИЦАТЕЛЬНОЙ СУММОВОЙ РАЗНИЦЫ</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ПРОЧИЙ СУБСЧЕТ ДЛЯ СВЕРНУТОЙ СУММОВОЙ РАЗНИЦЫ</span></p><p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">2. Нажать кнопку &quot;Загрузить&quot;, и тогда на экране появится список договоров для начисления суммовых разниц. В список попадают договора, по которым на указанную ДАТУ в указанном САЛЬДО есть обороты по дебету и кредиту.</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">Для каждого договора выводятся:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 62px 0px 64px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">организация-получатель</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 62px 0px 64px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">номер договора</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 64px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">дата договора</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 64px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">суммы из указанного САЛЬДО в рублях:</span></p><p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">входящее сальдо</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">оборот по дебету</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">оборот по кредиту</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">исход.сальдо</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">уже начисленная суммовая разница положительная</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 104px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">уже начисленная суммовая разница отрицательная</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">В этом списке необходимо отметить (клавишей пробел в квадратике &quot;Оk&quot; или нажатием кнопок &quot;Отметить все&quot;/&quot;Убрать все отметки&quot; под списком договоров) те договора, для которых надо начислить суммовую разницу.</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">3. Укажите параметры для создания документов с суммовыми разницами:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ВИД ДОКУМЕНТА &nbsp; - вид создаваемого документа</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">НОМЕР ДОКУМЕНТА - номер первого создаваемого документа, начиная с которого будут нумероваться документы, может принимать значение &lt;Авто&gt;, если настроена автонумерация документов этого вида</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">ВИД ДОКСПЕЦ - вид докспец </span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">признак ПРОИЗВОДИТЬ ГЕНЕРАЦИЮ ПРОВОДОК - если признак проставлен, то для каждого созданного документа по спецификациям будет произведена генерация проводок</span></p><p style="text-align: left; padding: 0px 0px 0px 14px; margin: 0px 62px 0px 47px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:14px;margin-left:-14px">&#8226;</span><span style="font-size: 11pt; font-family: 'Times New Roman';">кнопка НАСТРОЙКА ГЕНЕРАЦИИ - для просмотра и корректировки настройки генерации проводок в документе.</span></p><p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">4. Нажать кнопку &quot;Создать&quot;.</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">В результате работы режима создаются документы указанного вида. В каждом документе проставлена организация-получатель, совпадающая с организацией, которая проходит одним из субконто в сальдо по договору. Суммовые разницы по договорам объединяются в документы именно по этой организации.Суммовые разницы по договору начисляются отдельными спецификациями на каждый день оплаты по договору (а не на каждую оплату, как в БСофте - это связано с тем, что в Бухте суммовые разницы начисляются по САЛЬДО). При этом производится проверка, не начислена ли уже суммовая разница (по указанным на экране ПРОЧИМ СУБСЧЕТАМ ДЛЯ СУММОВОЙ РАЗНИЦЫ), и начисляется только суммы, превышающие уже начисленную.</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 62px 0px 37px;"><span style="font-size: 11pt; font-family: 'Times New Roman';">Режим работает на основе SQL-процедуры dbo.[Создание документов с сумм.разницами].</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

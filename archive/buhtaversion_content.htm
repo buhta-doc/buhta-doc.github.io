@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <title>Комплекс БУХта - новое в версиях</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar   { font-size: 120%; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding: 0; margin: 0; }
+       #toc li { margin-top: 2px; }
+       #toc ul { padding-left:0; padding-right:0 }
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<p class="navbar"><b>Contents</b>
+ | <a href="buhtaversion_kwindex.htm">Index</a>
+ | <a href="buhtaversion_ftsearch.htm">Search</a>
+</p>
+<hr/>
+
+
+  <!-- Place holder for the TOC - this variable is REQUIRED! -->
+  <ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="title.htm" target="hmcontent"><span class="heading1" id="s1">Комплекс БУХта - новое в версиях</span></a>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="versionchange.htm" target="hmcontent"><span class="heading1" id="s2">Смена релиза Комплекса БУХта</span></a>
+</li>
+<li class="heading1" id="i3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="mainpage20161026.htm" target="hmcontent"><span class="heading1" id="s3">Новое в версии. Релиз 183 от 26.10.2016</span></a>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href=javascript:void(0);><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Для разработчиков</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="script_debugger.htm" target="hmcontent"><span class="heading2" id="s4.1">Отладчик скриптов&nbsp;</span></a>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="scripts_examples.htm" target="hmcontent"><span class="heading2" id="s4.2">Примеры скриптов</span></a>
+</li>
+<li class="heading2" id="i4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="functions_examples.htm" target="hmcontent"><span class="heading2" id="s4.3">Примеры функций</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href=javascript:void(0);><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Режимы</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="wms_obhod.htm" target="hmcontent"><span class="heading2" id="s5.1">Складская топология. Определение порядка обхода</span></a>
+</li>
+<li class="heading2" id="i5.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="dohodrashodbook.htm" target="hmcontent"><span class="heading2" id="s5.2">Книга доходов и расходов</span></a>
+</li>
+<li class="heading2" id="i5.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="script_error.htm" target="hmcontent"><span class="heading2" id="s5.3">Описание формы ''Ошибка в скрипте''</span></a>
+</li>
+<li class="heading2" id="i5.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="buhtaformreportpok.htm" target="hmcontent"><span class="heading2" id="s5.4">Настройка бухгалтерской и статистической отчетности</span></a>
+</li>
+<li class="heading2" id="i5.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="import_online.htm" target="hmcontent"><span class="heading2" id="s5.5">Режим ''Импорт online из Бухты''</span></a>
+</li>
+<li class="heading2" id="i5.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.6" href="dogspeccorrect.htm" target="hmcontent"><span class="heading2" id="s5.6">Режим ''Корректировка спецификаций договоров''</span></a>
+</li>
+<li class="heading2" id="i5.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.7" href="calcus.htm" target="hmcontent"><span class="heading2" id="s5.7">Режим ''Расчет износа''</span></a>
+</li>
+<li class="heading2" id="i5.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.8" href="calcsummdiff.htm" target="hmcontent"><span class="heading2" id="s5.8">Режим ''Расчет суммовых разниц''</span></a>
+</li>
+<li class="heading2" id="i5.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.9" href="pfr.htm" target="hmcontent"><span class="heading2" id="s5.9">Режимы выгрузки в ПФР</span></a>
+</li>
+<li class="heading2" id="i5.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.10" href="genprov.htm" target="hmcontent"><span class="heading2" id="s5.10">Режим пакетной перегенерации проводок</span></a>
+</li>
+<li class="heading2" id="i5.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.11" href="svodniyreport.htm" target="hmcontent"><span class="heading2" id="s5.11">Сводный отчет</span></a>
+</li>
+<li class="heading2" id="i5.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.12" href="pricescripts.htm" target="hmcontent"><span class="heading2" id="s5.12">Скрипты для работы с прайс-листом</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href=javascript:void(0);><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Конфигурации</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="zarplata.htm" target="hmcontent"><span class="heading2" id="s6.1">Конфигурация ''Стандартная_Зарплата_...''</span></a>
+</li>
+<li class="heading2" id="i6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="buhtauniform.htm" target="hmcontent"><span class="heading2" id="s6.2">Конфигурация ''BuhtaUniform''</span></a>
+</li>
+<li class="heading2" id="i6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="buhtasupport.htm" target="hmcontent"><span class="heading2" id="s6.3">Конфигурация ''BuhtaSupport''</span></a>
+</li>
+<li class="heading2" id="i6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.4" href="buhtaform.htm" target="hmcontent"><span class="heading2" id="s6.4">Конфигурация ''BuhtaForm''</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href=javascript:void(0);><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Предыдущие версии</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="mainpage20160926.htm" target="hmcontent"><span class="heading2" id="s7.1">Новое в версии. Релиз 182 от 26.09.2016</span></a>
+</li>
+<li class="heading2" id="i7.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="mainpage20160830.htm" target="hmcontent"><span class="heading2" id="s7.2">Новое в версии. Релиз 181 от 30.08.2016</span></a>
+</li>
+<li class="heading2" id="i7.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="mainpage20160720.htm" target="hmcontent"><span class="heading2" id="s7.3">Новое в версии. Релиз 180 от 20.07.2016</span></a>
+</li>
+<li class="heading2" id="i7.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="mainpage20160628.htm" target="hmcontent"><span class="heading2" id="s7.4">Новое в версии. Релиз 179 от 28.06.2016</span></a>
+</li>
+<li class="heading2" id="i7.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.5" href="mainpage20160523.htm" target="hmcontent"><span class="heading2" id="s7.5">Новое в версии. Релиз 178 от 23.05.2016</span></a>
+</li>
+<li class="heading2" id="i7.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.6" href="mainpage20160420.htm" target="hmcontent"><span class="heading2" id="s7.6">Новое в версии. Релиз 177 от 20.04.2016</span></a>
+</li>
+<li class="heading2" id="i7.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.7" href="mainpage20160328.htm" target="hmcontent"><span class="heading2" id="s7.7">Новое в версии. Релиз 176 от 28.03.2016</span></a>
+</li>
+<li class="heading2" id="i7.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.8" href="mainpage20160226.htm" target="hmcontent"><span class="heading2" id="s7.8">Новое в версии. Релиз 175 от 26.02.2016</span></a>
+</li>
+<li class="heading2" id="i7.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.9" href="mainpage20160129.htm" target="hmcontent"><span class="heading2" id="s7.9">Новое в версии. Релиз 174 от 29.01.2016</span></a>
+</li>
+<li class="heading2" id="i7.10" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.10" href="mainpage20151228.htm" target="hmcontent"><span class="heading2" id="s7.10">Новое в версии. Релиз 173 от 28.12.2015</span></a>
+</li>
+<li class="heading2" id="i7.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.11" href="mainpage20151123.htm" target="hmcontent"><span class="heading2" id="s7.11">Новое в версии. Релиз 172 от 23.11.2015</span></a>
+</li>
+<li class="heading2" id="i7.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.12" href="mainpage20151023.htm" target="hmcontent"><span class="heading2" id="s7.12">Новое в версии. Релиз 171 от 23.10.2015</span></a>
+</li>
+<li class="heading2" id="i7.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.13" href="mainpage20150929.htm" target="hmcontent"><span class="heading2" id="s7.13">Новое в версии. Релиз 170 от 29.09.2015</span></a>
+</li>
+<li class="heading2" id="i7.14" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.14" href="mainpage20150827.htm" target="hmcontent"><span class="heading2" id="s7.14">Новое в версии. Релиз 169 от 27.08.2015</span></a>
+</li>
+<li class="heading2" id="i7.15" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.15" href="mainpage20150717.htm" target="hmcontent"><span class="heading2" id="s7.15">Новое в версии. Релиз 168 от 17.07.2015</span></a>
+</li>
+<li class="heading2" id="i7.16" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.16" href="mainpage20150622.htm" target="hmcontent"><span class="heading2" id="s7.16">Новое в версии. Релиз 167 от 22.06.2015</span></a>
+</li>
+<li class="heading2" id="i7.17" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.17" href="mainpage20150522.htm" target="hmcontent"><span class="heading2" id="s7.17">Новое в версии. Релиз 166 от 22.05.2015</span></a>
+</li>
+<li class="heading2" id="i7.18" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.18" href="mainpage20150424.htm" target="hmcontent"><span class="heading2" id="s7.18">Новое в версии. Релиз 165 от 24.04.2015</span></a>
+</li>
+<li class="heading2" id="i7.19" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.19" href="mainpage20150327.htm" target="hmcontent"><span class="heading2" id="s7.19">Новое в версии. Релиз 164 от 27.03.2015</span></a>
+</li>
+<li class="heading2" id="i7.20" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.20" href="mainpage20150225.htm" target="hmcontent"><span class="heading2" id="s7.20">Новое в версии. Релиз 163 от 25.02.2015</span></a>
+</li>
+<li class="heading2" id="i7.21" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.21" href="mainpage20150126.htm" target="hmcontent"><span class="heading2" id="s7.21">Новое в версии. Релиз 162 от 26.01.2015</span></a>
+</li>
+<li class="heading2" id="i7.22" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.22" href="mainpage20141229.htm" target="hmcontent"><span class="heading2" id="s7.22">Новое в версии. Релиз 161 от 29.12.2014</span></a>
+</li>
+<li class="heading2" id="i7.23" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.23" href="mainpage20141125.htm" target="hmcontent"><span class="heading2" id="s7.23">Новое в версии. Релиз 160 от 25.11.2014</span></a>
+</li>
+<li class="heading2" id="i7.24" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.24" href="mainpage20141027.htm" target="hmcontent"><span class="heading2" id="s7.24">Новое в версии. Релиз 159 от 27.10.2014</span></a>
+</li>
+<li class="heading2" id="i7.25" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.25" href="mainpage20140919.htm" target="hmcontent"><span class="heading2" id="s7.25">Новое в версии. Релиз 158 от 19.09.2014</span></a>
+</li>
+<li class="heading2" id="i7.26" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.26" href="mainpage20140826.htm" target="hmcontent"><span class="heading2" id="s7.26">Новое в версии. Релиз 157 от 26.08.2014</span></a>
+</li>
+<li class="heading2" id="i7.27" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.27" href="mainpage20140728.htm" target="hmcontent"><span class="heading2" id="s7.27">Новое в версии. Релиз 156 от 28.07.2014</span></a>
+</li>
+<li class="heading2" id="i7.28" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.28" href="mainpage20140627.htm" target="hmcontent"><span class="heading2" id="s7.28">Новое в версии. Релиз 155 от 27.06.2014</span></a>
+</li>
+<li class="heading2" id="i7.29" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.29" href="mainpage20140523.htm" target="hmcontent"><span class="heading2" id="s7.29">Новое в версии. Релиз 154 от 23.05.2014</span></a>
+</li>
+<li class="heading2" id="i7.30" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.30" href="mainpage20140425.htm" target="hmcontent"><span class="heading2" id="s7.30">Новое в версии. Релиз 153 от 25.04.2014</span></a>
+</li>
+<li class="heading2" id="i7.31" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.31" href="mainpage20140324.htm" target="hmcontent"><span class="heading2" id="s7.31">Новое в версии. Релиз 152 от 24.03.2014</span></a>
+</li>
+<li class="heading2" id="i7.32" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.32" href="mainpage20140224.htm" target="hmcontent"><span class="heading2" id="s7.32">Новое в версии. Релиз 151 от 24.02.2014</span></a>
+</li>
+<li class="heading2" id="i7.33" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.33" href="mainpage20140117.htm" target="hmcontent"><span class="heading2" id="s7.33">Новое в версии. Релиз 150 от 17.01.2014</span></a>
+</li>
+<li class="heading2" id="i7.34" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.34" href="mainpage20131218.htm" target="hmcontent"><span class="heading2" id="s7.34">Новое в версии. Релиз 149 от 18.12.2013</span></a>
+</li>
+<li class="heading2" id="i7.35" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.35" href="mainpage20131118.htm" target="hmcontent"><span class="heading2" id="s7.35">Новое в версии. Релиз 148 от 18.11.2013</span></a>
+</li>
+<li class="heading2" id="i7.36" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.36" href="mainpage20131021.htm" target="hmcontent"><span class="heading2" id="s7.36">Новое в версии. Релиз 147 от 21.10.2013</span></a>
+</li>
+<li class="heading2" id="i7.37" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.37" href="mainpage20130920.htm" target="hmcontent"><span class="heading2" id="s7.37">Новое в версии. Релиз 146 от 20.09.2013</span></a>
+</li>
+<li class="heading2" id="i7.38" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.38" href="mainpage20130827.htm" target="hmcontent"><span class="heading2" id="s7.38">Новое в версии. Релиз 145 от 27.08.2013</span></a>
+</li>
+<li class="heading2" id="i7.39" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.39" href="mainpage20130722.htm" target="hmcontent"><span class="heading2" id="s7.39">Новое в версии. Релиз 144 от 22.07.2013</span></a>
+</li>
+<li class="heading2" id="i7.40" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.40" href="mainpage20130620.htm" target="hmcontent"><span class="heading2" id="s7.40">Новое в версии. Релиз 143 от 20.06.2013</span></a>
+</li>
+<li class="heading2" id="i7.41" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.41" href="mainpage20130527.htm" target="hmcontent"><span class="heading2" id="s7.41">Новое в версии. Релиз 142 от 27.05.2013</span></a>
+</li>
+<li class="heading2" id="i7.42" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.42" href="mainpage20130417.htm" target="hmcontent"><span class="heading2" id="s7.42">Новое в версии. Релиз 141 от 17.04.2013</span></a>
+</li>
+<li class="heading2" id="i7.43" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.43" href="mainpage20130320.htm" target="hmcontent"><span class="heading2" id="s7.43">Новое в версии. Релиз 140 от 20.03.2013</span></a>
+</li>
+<li class="heading2" id="i7.44" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.44" href="mainpage20130219.htm" target="hmcontent"><span class="heading2" id="s7.44">Новое в версии. Релиз 139 от 19.02.2013</span></a>
+</li>
+<li class="heading2" id="i7.45" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.45" href="mainpage20130121.htm" target="hmcontent"><span class="heading2" id="s7.45">Новое в версии. Релиз 138 от 21.01.2013</span></a>
+</li>
+<li class="heading2" id="i7.46" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.46" href="mainpage20121217.htm" target="hmcontent"><span class="heading2" id="s7.46">Новое в версии. Релиз 137 от 17.12.2012</span></a>
+</li>
+<li class="heading2" id="i7.47" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.47" href="mainpage20121112.htm" target="hmcontent"><span class="heading2" id="s7.47">Новое в версии. Релиз 136 от 12.11.2012</span></a>
+</li>
+<li class="heading2" id="i7.48" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.48" href="mainpage20121015.htm" target="hmcontent"><span class="heading2" id="s7.48">Новое в версии. Релиз 135 от 15.10.2012</span></a>
+</li>
+<li class="heading2" id="i7.49" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.49" href="mainpage20120910.htm" target="hmcontent"><span class="heading2" id="s7.49">Новое в версии. Релиз 134 от 10.09.2012</span></a>
+</li>
+<li class="heading2" id="i7.50" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.50" href="mainpage20120803.htm" target="hmcontent"><span class="heading2" id="s7.50">Новое в версии. Релиз 133 от 03.08.2012</span></a>
+</li>
+<li class="heading2" id="i7.51" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.51" href="mainpage20120710.htm" target="hmcontent"><span class="heading2" id="s7.51">Новое в версии. Релиз 132 от 10.07.2012</span></a>
+</li>
+<li class="heading2" id="i7.52" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.52" href="mainpage20120613.htm" target="hmcontent"><span class="heading2" id="s7.52">Новое в версии. Релиз 131 от 13.06.2012</span></a>
+</li>
+<li class="heading2" id="i7.53" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.53" href="mainpage20120521.htm" target="hmcontent"><span class="heading2" id="s7.53">Новое в версии. Релиз 130 от 21.05.2012</span></a>
+</li>
+<li class="heading2" id="i7.54" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.54" href="mainpage20120416.htm" target="hmcontent"><span class="heading2" id="s7.54">Новое в версии. Релиз 129 от 16.04.2012</span></a>
+</li>
+<li class="heading2" id="i7.55" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.55" href="mainpage20120327.htm" target="hmcontent"><span class="heading2" id="s7.55">Новое в версии. Релиз 128 от 27.03.2012</span></a>
+</li>
+<li class="heading2" id="i7.56" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.56" href="mainpage20120224.htm" target="hmcontent"><span class="heading2" id="s7.56">Новое в версии. Релиз 127 от 24.02.2012</span></a>
+</li>
+<li class="heading2" id="i7.57" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.57" href="mainpage20120124.htm" target="hmcontent"><span class="heading2" id="s7.57">Новое в версии. Релиз 126 от 24.01.2012</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.gif','cicon2.gif','cicon1.gif');</script>
+
+
+</body>
+</html>

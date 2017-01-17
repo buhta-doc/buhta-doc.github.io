@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Складская топология. Определение порядка обхода</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "wms_obhod.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Система управления складом &quot;Buhta: WMS&quot;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="functions_examples.htm">Previous</a>&nbsp;
+     <a href="dohodrashodbook.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-weight: bold;">Складская топология. Определение порядка обхода</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Порядок перемещения по складу - это последовательность обхода секций и зон в процессе подбора товара (выполнения задания ПИК). Порядок перемещения задается на этапе создания складской топологии и в дальнейшем влияет на последовательность списка ячеек в заданиях на подбор. В дальнейшем порядок перемещения будем для простоты называть обходом. Обход это некая сущность, которая имеет номер и наименование. Номер обхода является уникальным, система не позволит ввести обход с номером, который уже имеется. Уникальность наименования не поддерживается. Обходов может быть несколько. Обход включает в себя все залы. Обходом, заполненным для конкретного зала, будем называть обход, в котором имеется последовательность отмеченных секций этого зала. </p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Для определения обхода в зале:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">1. В карточке топологии склада сделайте двойной щелчок мышью на изображении зала </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">2. В карточке отобразится закладка с названием зала </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">3. Установите галочку у параметра <span style="font-weight: bold;">Работать с обходами</span>. Станет доступной инструментальная панель обхода.</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><img src="toolbar.jpg" width="1070" height="25" alt="Toolbar" style="border:none" /></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">На начальном этапе работы с обходами будет установлен обход по умолчанию <span style="font-weight: bold;">Основной</span>, в дальнейшем - тот обход, из которого был завершен выход из режима работы с обходами в этом зале. За исключением обхода <span style="font-weight: bold;">Основной</span> все остальные варианты обходов пользователь создает самостоятельно. </p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Для создания обхода следует нажать на кнопку <img src="add.jpg" width="23" height="24" alt="Add" style="border:none" /> на инструментальной панели и завести номер и наименование обхода. Обход, созданный в одном зале, доступен для работы в другом зале. </p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Его номер и наименование могут быть изменены (кнопка <img src="edit.jpg" width="29" height="23" alt="Edit" style="border:none" />), изменение номера и наименования будет отражено в режимах работы с обходами в других залах.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Любой обход, за исключением <span style="font-weight: bold;">Основного</span>, может быть удален (кнопка <img src="delete.jpg" width="19" height="18" alt="Delete" style="border:none" />). Если имеется, хотя бы один зал, в котором обход предназначенный для удаления заполнен, перед удалением выдается запрос на подтверждение удаления с указанием залов, секции которых задействованы в данном обходе.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Обход может быть очищен (кнопка <img src="clear.jpg" width="21" height="22" alt="Clear" style="border:none" />). На режим очистки обхода не влияет наличие отмеченных секций этого обхода в других залах. Очищается только участок обхода в текущем зале.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Обход может быть загружен из базы данных (кнопка <img src="load.jpg" width="23" height="22" alt="Load" style="border:none" />). Производится восстановление текущего обхода в том виде, в котором он находился при последнем нажатии на кнопку <img src="save.jpg" width="21" height="23" alt="Save" style="border:none" /> - <span style="font-weight: bold;">Сохранить</span>. Изменения, сделанные в текущем сеансе после последнего сохранения, будут при этом потеряны.</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 19px;"><span style="font-size:10pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Кроме того любое изменение порядка обхода, добавленное в текущем сеансе работы, может быть отменено с помощью кнопки <img src="undo.jpg" width="23" height="22" alt="Undo" style="border:none" />.</p><p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Для установки порядка обхода существует три алгоритма обхода: <span style="font-weight: bold;">ручной, последовательный</span> и <span style="font-weight: bold;">зигзаг</span>. Для последовательного и зигзага определено понятие направление обхода.  </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Для визуального отображения направления обхода предназначен параметр <span style="font-weight: bold;">Вкл/Выкл. стрелки</span>. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">При наведении курсора мышки на секцию включенную в обход появляется подсказка с порядковым номером этой секции в обходе.  </p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Ручной алгоритм </span> (кнопка <img src="main.jpg" width="22" height="21" alt="Main" style="border:none" />) – нажатием левой кнопки мыши помечаются секции, на которых установлен курсор, переход от одной секции к другой будет производиться в том порядке, в каком отмечались секции. Повторное выделение уже отмеченной записи снимает выделение (только в ручном алгоритме!).</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><img src="obhod1.jpg" width="258" height="106" alt="Obhod1" style="border:none" /></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-family: BalticaC; font-weight: bold;">П</span><span style="font-weight: bold;">оследовательный </span>алгоритм (кнопка<img src="serial.jpg" width="18" height="20" alt="Serial" style="border:none" />) – нажатием левой кнопки мыши помечается &nbsp;ряд, на котором установлен курсор, переход осуществляется по всем секциям этого ряда в порядке возрастания секций, если нажата кнопка <img src="a-z.jpg" width="22" height="21" alt="A-Z" style="border:none" />, и в порядке убывания, если нажата кнопка <img src="z-a.jpg" width="21" height="23" alt="Z-A" style="border:none" />. При переходе от одного ряда к другому следует сменить направление обхода нажатием одной из кнопок <img src="a-z.jpg" width="22" height="21" alt="A-Z" style="border:none" />, <img src="z-a.jpg" width="21" height="23" alt="Z-A" style="border:none" />.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><img src="obhod2.jpg" width="356" height="105" alt="Obhod2" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Зигзаг </span>(кнопка <img src="zig.jpg" width="22" height="22" alt="Zig" style="border:none" />) - нажатием левой кнопки мыши помечается &nbsp;один ряд, затем повторным нажатием левой кнопки мыши - другой. Переходим поочередно от секции к секции, от одного ряда к другому в порядке возрастания секций, если нажата кнопка <img src="a-z.jpg" width="22" height="21" alt="A-Z" style="border:none" />, </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">&nbsp;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><img src="obhod3.jpg" width="358" height="104" alt="Obhod3" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">и в порядке убывания, если нажата кнопка <img src="z-a.jpg" width="21" height="23" alt="Z-A" style="border:none" />.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><img src="obhod4.jpg" width="360" height="105" alt="Obhod4" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">!!! </span>В том случае если ряды, участвующие в порядке обхода по алгоритму <span style="font-weight: bold;">Зигзаг</span>, имеют разное количество секций, обход более длинного ряда следует заканчивать ручным алгоритмом, и ни в коем случае не последовательным. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">4. Для сохранения обхода следует нажать на кнопку <img src="save.jpg" width="21" height="23" alt="Save" style="border:none" /> - <span style="font-weight: bold;">Сохранить</span>.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

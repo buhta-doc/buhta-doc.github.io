@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Отладчик скриптов&nbsp;</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "script_debugger.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px;"><span style="font-size: 12pt; font-weight: bold;">Отладчик скриптов </span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="mainpage20161026.htm">Previous</a>&nbsp;
+     <a href="scripts_examples.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Отладчик скриптов <span style="font-weight: bold;">БУХта Script Debugger </span>обеспечивает отладку разрабатываемых пользовательских форм и скриптов, значительно упрощает работу программиста. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Запускается как отдельное приложение. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Для отладки работы процедур и функций разработчику предоставляется пошаговый отладчик со стандартным для подобных приложений функционалом: контрольные точки останова, трассировка, просмотр значений переменных и т.п.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Для запуска отладчика необходимо чтобы файл <span style="font-weight: bold;">dsd.exe</span> находился в той же папке, что и клиентское приложение. Тогда из приложения<span style="font-weight: bold;"> БУХта</span> его можно запустить с помощью скриптов:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;">1) Автоматически, при старте приложения. Надо добавить скрипт для класса ApplicationEvents – событие Application.OnRun</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;"> <span style="font-weight: bold;">ShellExecute 0, &quot;open&quot;, ExtractFilePath(bm.ExeName) + &quot;dsd.exe&quot;, Nil, Nil, SW_SHOW</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;">Этот же код можно использовать и для <span style="font-weight: bold;">АРМ'</span>а в VBScript'е.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;">2) Из Pascal-скриптов, с помощью вызова</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 38px;">  <span style="font-weight: bold;">ShellExecute(0, 'open', ExtractFilePath(bm.ExeName)+'dsd.exe' , Nil, Nil, SW_SHOW);</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В появившемся окне в меню <span style="font-weight: bold;">View</span> выбрать пункт <span style="font-weight: bold;">Running Scripts</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 67px;"><img src="script_debug1.jpg" width="491" height="161" alt="script_debug1" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В окне <span style="font-weight: bold;">Select script to debug </span>будут показаны запущенные на компьютере скрипты.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 67px;"><img src="script_debug2.jpg" width="416" height="263" alt="script_debug2" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Если щелкнуть по одному из них мышью, то откроется окно отладки соответствующего скрипта. В этом окне действуют основные команды отладчика Delphi.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 67px;"><img src="script_debug3.jpg" width="538" height="348" alt="script_debug3" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Можно добавлять/удалять точки останова, производить трассировку кода, добавлять выражения для отслеживания/вычисления их значений. Пока приложение остановлено в режиме отладки, для переменных в контекстном меню отображаются их значения. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 72px;"><img src="script_debug4.jpg" width="540" height="338" alt="script_debug4" style="border:none" /></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Горячие клавиши:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">F9</span>...........Выполнить</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">F5</span>...........Установить или удалить точку останова</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">F8</span>...........Трассировка без захода в метод или функцию</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">F7</span>...........Трассировка с заходом в метод или функцию</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">F4</span>...........Выполнить код до курсора и остановиться</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Ctrl+F2</span>...Остановить отладку</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

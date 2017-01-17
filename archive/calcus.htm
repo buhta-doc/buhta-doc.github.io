@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Режим ''Расчет износа''</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "calcus.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Режим ''Расчет износа''</span></p>
+
+    </td>
+    <td style="text-align:right">
+     <a href="mainpage20161026.htm">Top</a>&nbsp;
+     <a href="dogspeccorrect.htm">Previous</a>&nbsp;
+     <a href="calcsummdiff.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Режим вызывается из меню <span style="font-weight: bold;">Расчеты - Износ ОС и НМА.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В составе базы (начиная с релиза <span style="font-weight: bold;">55</span>) имеется таблица <span style="font-weight: bold;">ОС Сумма амортизации</span>, хранящая для каждого ОС (по каждому юр. лицу) его текущую балансовую стоимость, ежемесячную сумму амортизации, рассчитанную для этой балансовой стоимости и дату, с которой начинается применение этой суммы. С релиза <span style="font-weight: bold;">75</span> она начинает использоваться в обновленной процедуре расчета износа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Все нижесказанное относится к линейному алгоритму расчета износа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В момент расчета амортизации текущая балансовая стоимость ОС сравнивается с записанной в таблице <span style="font-weight: bold;">ОС Сумма амортизации</span>. Несовпадение сумм говорит о необходимости перерасчета суммы ежемесячной амортизации и формировании новой записи.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">В бухгалтерском и налоговом учете суммы перерасчитываются по-разному. Для бухгалтерского учета новая сумма рассчитывается исходя из остаточной стоимости и оставшегося срока эксплуатации. Для налогового - исходя из новой балансовой стоимости, и либо прежней нормы амортизации, если срок полезного использования не изменился, либо новой нормы, рассчитанной для нового срока эксплуатации. Оставшийся срок определяется как разность между полным сроком полезного использования и фактическим сроком эксплуатации. Фактическим сроком эксплуатации считаем количество месяцев, в которых производилось начисление износа.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Если в таблице <span style="font-weight: bold;">ОС Сумма амортизации</span> нет записей для данного ОС (это будет иметь место для всех ОС при переходе на &nbsp;версию <span style="font-weight: bold;">75</span>), сумма определяется исходя из текущей балансовой стоимости и полного срока полезного использования (или нормы амортизации по Единым нормам), т.е. так же, как она вычислялась в процедуре расчета износа до релиза <span style="font-weight: bold;">75</span>.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold;">Замечание.</span> В настройке износа ОС (меню <span style="font-weight: bold;">Справочники – Настройка - ОС и НМА - Настройки расчета износа</span>) следует установить &quot;непустое&quot; значение <span style="font-weight: bold;">Приоритет при расчете суммы износа</span>. При неустановленном значении считается, что для ОС, введенных в эксплуатацию после 01.01.2002, приоритет имеет <span style="font-weight: bold;">срок полезного использования</span>, а для &quot;старых&quot; ОС - <span style="font-weight: bold;">годовая норма амортизации </span>по Единым нормам.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
