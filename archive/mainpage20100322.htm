@@ -2,14 +2,89 @@
 <html>
 <head>
    <title>Новое в версии. Релиз 104 от 22.03.2010</title>
-   <meta name="generator" content="Help &amp; Manual" />
-   <meta name="keywords" content="Договоры и документы,Прайс-лист,Отчеты,Зарплата,Разное" />
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Договоры и документы,Прайс-лист,Отчеты,Зарплата,Разное">
+   <meta name="description" content="Финансово-Управленческий Комплекс БУХта. Новое в версии. Релиз 104 от 22.03.2010">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <link type="text/css" href="default.css" rel="stylesheet" />
-   <style type="text/css">
-     body { margin: 0px; background: #FFFFFF; }
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { 
+   margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }  
+
+div#printheader { 
+   display: none;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
    </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>  
    <script type="text/javascript" src="jquery.js"></script>
    <script type="text/javascript" src="helpman_settings.js"></script>
    <script type="text/javascript" src="helpman_topicinit.js"></script>
@@ -23,26 +98,45 @@
    </script>
 </head>
 <body>
+<!--ZOOMSTOP-->
 
+<div id="printheader"><p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Новое в версии. Релиз 104 от 22.03.2010</span></p>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
 
-<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
-  <tr style="vertical-align:middle">
-    <td style="text-align:left">
-      <p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   &raquo;No topics above this level&laquo;
+   </p>
+   <p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 12px;"><span style="font-size: 12pt; font-weight: bold;">Новое в версии. Релиз 104 от 22.03.2010</span></p>
 
     </td>
-    <td style="text-align:right">
-     <a href="mainpage20161026.htm">Top</a>&nbsp;
-     
-     
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <img src="btn_prev_d.gif" border="0"
+        ><a href="mainpage20161226.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><img src="btn_next_d.gif" border="0">
     </td>
   </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
 </table>
+</div>
 
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
 
-<!-- Placeholder for topic body. -->
-<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+</div>  
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-size: 12pt; font-style: italic; font-weight: bold; text-decoration: underline;">Релиз 104 от 22.03.2010</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="font-weight: bold; color: #000080;">Содержание:</span></p>
@@ -147,7 +241,26 @@
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;">Добавлена возможность вызова стандартного окна <span style="font-weight: bold;">Конфигурация</span> (просмотр и редактирование полей <span style="font-weight: bold;">Группа</span>, <span style="font-weight: bold;">Конфигурация</span>, <span style="font-weight: bold;">Версия</span> и т.д.) в карточках настройки <span style="font-weight: bold;">Сводного отчета</span> и <span style="font-weight: bold;">Автонумерации</span>. Вызов осуществляется по нажатию на кнопку <span style="font-weight: bold;">Конфигурация</span>.</p>
 <p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
 
-</td></tr></table>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
 
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+

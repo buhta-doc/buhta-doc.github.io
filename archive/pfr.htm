@@ -1,15 +1,90 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-   <title>Режимы выгрузки в ПФР</title>
-   <meta name="generator" content="Help &amp; Manual" />
-   <meta name="keywords" content="" />
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Режимы &gt; Режимы выгрузки в ПФР</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+   <meta name="description" content="Финансово-Управленческий Комплекс БУХта. Режимы выгрузки в ПФР">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <link type="text/css" href="default.css" rel="stylesheet" />
-   <style type="text/css">
-     body { margin: 0px; background: #FFFFFF; }
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { 
+   margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }  
+
+div#printheader { 
+   display: none;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
    </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>  
    <script type="text/javascript" src="jquery.js"></script>
    <script type="text/javascript" src="helpman_settings.js"></script>
    <script type="text/javascript" src="helpman_topicinit.js"></script>
@@ -23,26 +98,51 @@
    </script>
 </head>
 <body>
+<!--ZOOMSTOP-->
 
+<div id="printheader"><p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 12pt; font-weight: bold;">Режимы выгрузки в ПФР</span></p>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
 
-<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#C0C0C0">
-  <tr style="vertical-align:middle">
-    <td style="text-align:left">
-      <p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   Режимы&nbsp;&gt;</p>
+   <p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 12pt; font-weight: bold;">Финансово-Управленческий Комплекс БУХта.</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 12pt; font-weight: bold;">Режимы выгрузки в ПФР</span></p>
 
     </td>
-    <td style="text-align:right">
-     <a href="mainpage20161026.htm">Top</a>&nbsp;
-     <a href="calcsummdiff.htm">Previous</a>&nbsp;
-     <a href="genprov.htm">Next</a>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="calcsummdiff.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="mainpage20161226.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="genprov.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
     </td>
   </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
 </table>
+</div>
 
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
 
-<!-- Placeholder for topic body. -->
-<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+</div>  
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><a id=""></a><span style="font-size: 12pt; font-weight: bold;">Режимы выгрузки в ПФР</span></p>
 <p style="text-indent: 0px; margin: 0px 0px 0px 19px;"><span style="color: #000000;">&nbsp;</span></p>
@@ -57,7 +157,26 @@
 <p style="text-indent: -27px; margin: 0px 0px 0px 46px;"><span style="color: #000000;">&nbsp;</span></p>
 <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">Развернуть на локальном диске программу PERSW (например, в директорий PERSW07).</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">2.</td><td style="border:none;padding:0"><span style="color: #ff0000;">НЕ ЗАПУСКАТЬ программу PERSW ДО ИМПОРТА В НЕЕ ДАННЫХ, ВЫГРУЖЕННЫХ ИЗ БУХТЫ!!!!!</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">3.</td><td style="border:none;padding:0">Скопировать из версии комплекса БУХта целиком директорий CLEAR_DATA_VER_1_4 (лежит в директории Зарплата) в отдельный директорий на локальном диске.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">4.</td><td style="border:none;padding:0">В приложении БУХта вызвать пользовательскую форму [ЕСН. Экспорт в ПФР. Заполнение Инд.сведений]. На экране формы указать период - 2007 год, проставить признак &quot;В WINDOWS-формате&quot;, отметить в списке сотрудников уходящих на пенсию, указать шифры для сбора данных, нажать кнопку &quot;Заполнить&quot;. По завершению работы режима данные о доходах и стаже сотрудников будут собраны и записаны в соотв. таблицы, которые можно просмотреть и исправить по кнопке &quot;Список Индив.сведений&quot;.  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">5.</td><td style="border:none;padding:0">В приложении БУХта вызвать форму [ЕСН. Экспорт в ПФР. Выгрузка в PERSW], указать период 2007 год, путь для DBF-файлов результата (директорий рабочих баз программы PERSW PERSW07\DATA или другой директорий), путь для &quot;пустых&quot; DBF-файлов (директорий, в который скопирован директорий CLEAR_DATA_VER_1_4 из версии комплекса БУХта), нажать кнопку Экспорт. По завершению работы режима экспорта в указанном директории будут созданы 16 DBF-файлов с данными о стаже и доходах сотрудников - надо скопировать их в директорий рабочих баз программы PERSW (директорий PERSW07\DATA).  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">6.</td><td style="border:none;padding:0">Запустить программу PERSW (файл persw.exe, таб. номер 777, пароль 777).  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">7.</td><td style="border:none;padding:0">В программе PERSW переиндексировать созданные базы - в меню &quot;Администрирование - Резервное копирование и индексирование&quot; снять признак &quot;Копирование базы&quot;, проставить только признак &quot;Переиндексирование базы&quot; и нажать кнопку Запустить.  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">8.</td><td style="border:none;padding:0">В программе PERSW в меню &quot;Страхователи - Страхователи&quot; нажать кнопку &quot;Расчетный период и тариф&quot; и добавить запись за 2007 год с указанием среднего кол-ва работающих и тарифа - Р (регрессивный) или М (максимальный) - при этом будет рассчитан ОПС каждого сотрудника.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">9.</td><td style="border:none;padding:0">В программе PERSW в меню &quot;Работа с пачками - Работа с пачками ИС&quot; нажать кнопку &quot;Сформировать&quot;. По завершению формирования нажать кнопку &quot;Ведомость уплаты&quot;, в открывшейся карточке нажать кнопку &quot;Добавить&quot; и указать год и суммы перечисленных взносов ОПС, сохранить и выйти в карточку &quot;Работа с пачками ИС&quot;, нажать в ней на кнопку &quot;Выгрузить&quot; - сведения выгружаются в текстовые файлы и проверяются программой CHECKPSN.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="color: #000000;">&nbsp;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"></td><td style="border:none;padding:0"><span style="color: #00007f;">Режим работы при использовании формы [ЕСН. Экспорт в ПФР. Выгрузка в PERSW] версии 1.72 и выше.</span></td></tr></table></div><p style="text-indent: -27px; margin: 0px 0px 0px 46px;"><span style="color: #000000;">&nbsp;</span></p>
 <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">1.</td><td style="border:none;padding:0">Развернуть на локальном диске программу PERSW (например, в директорий PERSW07).</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">2.</td><td style="border:none;padding:0">Скопировать из версии комплекса БУХта целиком директорий CLEAR_DATA_VER_1_4 (лежит в директории Зарплата) в отдельный директорий на локальном диске.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">3.</td><td style="border:none;padding:0">В приложении БУХта вызвать пользовательскую форму [ЕСН. Экспорт в ПФР. Заполнение Инд.сведений]. На экране формы указать период - 2007 год, проставить признак &quot;В WINDOWS-формате&quot;, отметить в списке сотрудников уходящих на пенсию, указать шифры для сбора данных, нажать кнопку &quot;Заполнить&quot;. По завершению работы режима данные о доходах и стаже сотрудников будут собраны и записаны в соотв. таблицы, которые можно просмотреть и исправить по кнопке &quot;Список Индив.сведений&quot;.  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">4.</td><td style="border:none;padding:0">В приложении БУХта вызвать форму [ЕСН. Экспорт в ПФР. Выгрузка в PERSW], указать период 2007 год, путь для DBF-файлов результата (директорий рабочих баз программы PERSW PERSW07\DATA или другой директорий), путь для &quot;пустых&quot; DBF-файлов (директорий, в который скопирован директорий CLEAR_DATA_VER_1_4 из версии комплекса БУХта), <span style="font-weight: bold;">проставить признак &quot;Для версии PERSW начиная с 1.6.1 от 14.02.2007&quot;, если вы работаете с указанной версией</span>, нажать кнопку Экспорт. По завершению работы режима экспорта в указанном директории будут созданы 16 DBF-файлов с данными о стаже и доходах сотрудников <span style="font-weight: bold;">(если был указан признак &quot;Для версии PERSW начиная с 1.6.1 от 14.02.2007&quot;, дополнительно создаются три </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">файла: 'data1.dbc, data1.dct, data1.dcx.)</span><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span>- надо скопировать все файлы в директорий рабочих баз программы PERSW (директорий PERSW07\DATA).  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">5.</td><td style="border:none;padding:0">Запустить программу PERSW (файл persw.exe, таб. номер 777, пароль 777).  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">6.</td><td style="border:none;padding:0">В программе PERSW переиндексировать созданные базы - в меню &quot;Администрирование - Резервное копирование и индексирование&quot; снять признак &quot;Копирование базы&quot;, проставить только признак &quot;Переиндексирование базы&quot; и нажать кнопку Запустить.  </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">7.</td><td style="border:none;padding:0">В программе PERSW в меню &quot;Страхователи - Страхователи&quot; нажать кнопку &quot;Расчетный период и тариф&quot; и добавить запись за 2007 год с указанием среднего кол-ва работающих и тарифа - Р (регрессивный) или М (максимальный) - при этом будет рассчитан ОПС каждого сотрудника.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px">8.</td><td style="border:none;padding:0">В программе PERSW в меню &quot;Работа с пачками - Работа с пачками ИС&quot; нажать кнопку &quot;Сформировать&quot;. По завершению формирования нажать кнопку &quot;Ведомость уплаты&quot;, в открывшейся карточке нажать кнопку &quot;Добавить&quot; и указать год и суммы перечисленных взносов ОПС, сохранить и выйти в карточку &quot;Работа с пачками ИС&quot;, нажать в ней на кнопку &quot;Выгрузить&quot; - сведения выгружаются в текстовые файлы и проверяются программой CHECKPSN.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 19px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"></td><td style="border:none;padding:0"></td></tr></table></div>
-</td></tr></table>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
 
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
