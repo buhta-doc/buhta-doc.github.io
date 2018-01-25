@@ -27,3 +27,6 @@
 [Выпущен релиз 186 от 28.01.2017 г.](releases/186/186.md)
   
 [переход в архив 2001-2016 годов.](archive\index.htm)
+
+ПО для ТСД MC32N0
+[скачать **BUHta_Mc32N0_WEC7_App**](BUHta_Mc32N0_WEC7_App.zip)
