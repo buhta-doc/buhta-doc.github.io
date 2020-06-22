@@ -22,4 +22,22 @@ __site:doc.buhta.ru__ ```искомый текст```
 
 
 -------
->ПО для ТСД MC32N0 [скачать **BUHta_Mc32N0_WEC7_App**](BUHta_Mc32N0_WEC7_App.zip)
+
+##### ПО для ТСД MC9090
+>
+[скачать версию **BUHta MC9090 WinCE_5_0 CF3 App.rar**](BUHta_MC9090_WinCE_5_0_CF3_App.rar)
+>
+[скачать версию **BUHta MC9090 WinCE Beep.rar**](BUHta_MC9090_WinCE_Beep.rar)
+
+##### ПО для ТСД MC32N0
+>
+[скачать версию **BUHta_MC31xx_WinCE_6_0.zip**](BUHta_MC31xx_WinCE_6_0.zip)
+>
+[скачать версию **BUHta_Mc32N0_WEC7.zip**](BUHta_Mc32N0_WEC7.zip)
+>
+[скачать версию **BUHta_Mc32N0_WEC7_App_2019.rar**](BUHta_Mc32N0_WEC7_App_2019.rar)
+
+##### ПО для ТСД MC2100
+>
+[скачать версию **BUHta_MC2100_WinCE_6_0_2019.zip**](BUHta_MC2100_WinCE_6_0_2019.zip)
+
