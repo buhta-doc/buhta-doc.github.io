@@ -54,6 +54,9 @@ __site:doc.buhta.ru__ ```искомый текст```
 >
 [скачать версию **BUHta_MC2100_WinCE_6_0_2019.zip**](BUHta_MC2100_WinCE_6_0_2019.zip)
 
+##### ПО для Intermec
+>
+[скачать версию **BuhtaCABs_Intermec_WEH65.zip**](BuhtaCABs_Intermec_WEH65.zip)
 ##### ПО для Android
 >
 [скачать версию **buhtawms.apk**](buhtawms.apk)
