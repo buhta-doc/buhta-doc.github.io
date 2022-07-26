@@ -31,6 +31,8 @@ __site:doc.buhta.ru__ ```искомый текст```
 ##### ПО для Winows Mobile and High Resolution
 [скачать версию **BuhtaCABs_2_8_WinMobile_6_5_v2.zip**](BuhtaCABs_2_8_WinMobile_6_5_v2.zip)
 
+[скачать версию **Buhta_WinMobile_5.zip**](Buhta_WinMobile_5.zip)
+
 [скачать версию **BuhtaCABs_for_HighScreen_wm65.zip**](BuhtaCABs_for_HighScreen_wm65.zip)
 
 ##### ПО для ТСД MC32N0
