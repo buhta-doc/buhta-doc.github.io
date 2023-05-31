@@ -48,9 +48,11 @@ __site:doc.buhta.ru__ ```искомый текст```
 ##### ПО для Intermec
 >
 [скачать версию **BuhtaCABs_Intermec_WEH65.zip**](BuhtaCABs_Intermec_WEH65.zip)
->
+
 ##### ПО для Android
-[скачать версию **buhtawms.apk**](buhtawms.apk)
+>
+[скачать версию **buhtawms.apk**](buhtawms.apk) 
+
 [скачать версию **buhtawms-zebra.apk**](buhtawms-zebra.apk)
 
 --------
