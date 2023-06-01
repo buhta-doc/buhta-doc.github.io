@@ -52,7 +52,7 @@ __site:doc.buhta.ru__ ```искомый текст```
 ##### ПО для Android
 >
 [скачать версию **buhtawms.apk**](buhtawms.apk) 
-
+>
 [скачать версию **buhtawms-zebra.apk**](buhtawms-zebra.apk)
 
 --------
