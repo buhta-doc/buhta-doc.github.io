@@ -49,6 +49,8 @@ __site:doc.buhta.ru__ ```искомый текст```
 [скачать версию **buhtawms-zebra.apk**](buhtawms-zebra.apk)
 >
 [скачать версию **buhtawms-xiaomi-samsung.apk**](buhtawms-xiaomi-samsung.apk)
+>
+[скачать версию **buhtawms-oilcity.apk**](buhtawms-oilcity.apk.apk)
 
 --------
 ##### Документация по настройке WMS Комплекса БУХта
