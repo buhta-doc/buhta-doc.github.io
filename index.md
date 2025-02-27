@@ -49,7 +49,7 @@ __site:doc.buhta.ru__ ```искомый текст```
 >
 [скачать версию **buhtawms-xiaomi-samsung.apk**](buhtawms-xiaomi-samsung.apk)
 >
-[скачать версию **buhtawms-oilcity.apk**](buhtawms-oilcity.apk)
+[скачать версию  **buhtawms-oilcity.apk**](buhtawms-oilcity.apk)
 
 --------
 ##### Документация по настройке WMS Комплекса БУХта
