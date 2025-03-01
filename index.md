@@ -1,6 +1,8 @@
 ## Документация ПО БУХта 3.4
 
 ### 2025 год
+[Выпущен релиз 283 от 28.02.2025 г.](releases/283/283.md)
+
 [Выпущен релиз 282 от 31.01.2025 г.](releases/282/282.md)
 
 ### Архив 2024-2001 гг.
@@ -41,7 +43,7 @@ __site:doc.buhta.ru__ ```искомый текст```
 >
 [скачать версию **BuhtaCABs_Intermec_WEH65.zip**](BuhtaCABs_Intermec_WEH65.zip)
 
-##### ПО для Android
+##### ПО для Android (Google)
 >
 [скачать версию **buhtawms.apk**](buhtawms.apk) 
 >
