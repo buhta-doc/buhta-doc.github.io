@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+url: "https://buhta-doc.github.io"
+
+plugins:
+  - jekyll-sitemap
